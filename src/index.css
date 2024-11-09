@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	box-shadow: none;
+	font-family: "Wix Madefor Text", sans-serif;
+}
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+:root {
+	--blue: hsl(237, 96%, 46%);
+	--blue-border: hsl(193, 80%, 51%);
+}
