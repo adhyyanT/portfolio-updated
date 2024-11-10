@@ -5,7 +5,12 @@ import styles from "./LoadAnimation.module.css";
 export default function LoadAnimation({ children }: { children: ReactNode }) {
 	return (
 		<>
-			<motion.div className={styles.box}>
+			<motion.div
+				className={styles.box}
+				initial={{ translateY: 0 }}
+				animate={{ translateY: "-100%" }}
+				transition={{ duration: 0.75, delay: 2.5, ease: [0.78, 0, 0.64, 0.62] }}
+			>
 				<motion.div
 					className={styles.innerBox}
 					animate={{ scale: [1, 0.9, 1] }}
