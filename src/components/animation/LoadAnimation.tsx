@@ -7,8 +7,8 @@ export default function LoadAnimation({ children }: { children: ReactNode }) {
 		<>
 			<motion.div
 				className={styles.box}
-				initial={{ translateY: 0 }}
-				animate={{ translateY: "-100%" }}
+				initial={{ translateY: 0, overflow: "hidden" }}
+				animate={{ translateY: "-100%", overflow: "unset" }}
 				transition={{ duration: 0.75, delay: 2.5, ease: [0.78, 0, 0.64, 0.62] }}
 			>
 				<motion.div

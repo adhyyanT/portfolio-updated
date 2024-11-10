@@ -1,0 +1,51 @@
+.box {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.mediumFont {
+	font-size: 2rem;
+
+	@media screen and (max-width: 700px) {
+		font-size: 1.5rem;
+	}
+}
+.strongFont {
+	font-size: 4rem;
+	font-weight: 600;
+	@media screen and (max-width: 700px) {
+		font-size: 2rem;
+	}
+}
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+	line-height: 1;
+	gap: 1rem;
+	transform: translateY(-60px);
+	@media screen and (max-width: 700px) {
+		transform: translateY(-30px);
+	}
+}
+.highlight {
+	color: var(--blue);
+}
+.buttonContainer {
+	display: flex;
+	justify-content: flex-end;
+}
+pre {
+	font-weight: 400;
+	opacity: 0.7;
+	font-size: 1.2rem;
+}
+.btn {
+	font-weight: 600;
+	font-size: 1.1rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}

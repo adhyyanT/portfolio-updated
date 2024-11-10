@@ -9,3 +9,8 @@
 	color: var(--blue);
 	background-color: var(--background);
 }
+
+.buttonFilled {
+	color: var(--text-color-secondary);
+	background-color: var(--blue);
+}

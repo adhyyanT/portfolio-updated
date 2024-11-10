@@ -1,6 +1,6 @@
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
-import LoadAnimation from "../components/animation/LoadAnimation";
+import LoadAnimation from "../components/Animation/LoadAnimation";
 import Home from "../pages/Home/Home";
 
 export default function AnimatedRoutes() {

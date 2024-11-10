@@ -11,7 +11,7 @@
 #root {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	height: 100%;
 }
 
 @layer base {
@@ -22,4 +22,7 @@
 		--text-color-secondary: #e8e8e8;
 		--background: #e8e8e8;
 	}
+}
+body {
+	height: 100vh;
 }

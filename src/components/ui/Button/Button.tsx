@@ -11,13 +11,14 @@ type ButtonProps = HTMLMotionProps<"button"> & {
 export default function Button(props: ButtonProps) {
 	return (
 		<motion.button
+			{...props}
 			className={classNames(
+				props.className,
 				styles.button,
 				props.variant ?? styles.buttonOutline,
 				props.variant === "outline" && styles.buttonOutline,
 				props.variant === "filled" && styles.buttonFilled
 			)}
-			{...props}
 		>
 			{props.children}
 		</motion.button>
