@@ -13,6 +13,9 @@ export default function Home() {
 			<div className={styles.contentContainer}>
 				<Experience />
 			</div>
+			<footer>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quis. Maiores quos dolore quam, est quisquam neque. Repellat est pariatur, iusto tempore nihil illo natus commodi eos accusantium libero reprehenderit?
+			</footer>
 		</div>
 	);
 }

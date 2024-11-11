@@ -10,10 +10,7 @@
 	position: relative;
 }
 .title::after {
-	/* display: flex; */
 	content: "";
-	/* width: 20px; */
-	/* opacity: 0; */
 	border-bottom: 2px solid var(--blue);
 	position: absolute;
 	bottom: -3px;
@@ -23,61 +20,5 @@
 .expContainer {
 	display: flex;
 	gap: 0.5rem;
-}
-.expContent {
-	border-left: 2px solid black;
-	padding-left: 3rem;
-	@media screen and (max-width: 700px) {
-		padding-left: 1rem;
-	}
-}
-.textContainer {
-}
-.timeLine {
-	flex: 1 1 25%;
-}
-.textBox {
-	flex: 1 1 75%;
-}
-.expHeader {
-	padding-left: 3rem;
-	@media screen and (max-width: 700px) {
-		padding-left: 1rem;
-	}
-	position: relative;
-}
-.icon {
-	position: absolute;
-	top: 50%;
-	height: 50%;
-	left: 0;
-	transform: translate(-50%, -50%);
-}
-.dateContainer {
-	border: 1px solid var(--blue);
-	/* background-color: #dbdbdb; */
-	color: var(--text-color);
-	width: fit-content;
-	position: relative;
-	width: fit-content;
-	padding: 3px;
-	border-radius: 5px;
-	/* display: inline-block;
-	height: 150px;
-	background: #000;
-	width: 75px; */
-}
-.dateArrow {
-	position: absolute;
-	/* border: 1px solid var(--blue); */
-	width: 50%;
-	height: 100%;
-	right: 0;
-	top: 0;
-	/* padding: 3px; */
-	transform: translateX(100%);
-	border-bottom: 12px solid transparent;
-	border-left: 12px solid var(--blue);
-	border-right: 12px solid transparent;
-	border-top: 12px solid transparent;
+	flex-direction: column;
 }

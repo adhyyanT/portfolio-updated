@@ -1,0 +1,84 @@
+.timeLine {
+	flex: 1 1 20%;
+}
+.textBox {
+	flex: 1 1 80%;
+    @media screen and (min-width: 1024px) {
+        flex: 1 1 60%;
+        font-size: 1.25rem;
+    }
+}
+.expHeader {
+	padding-left: 3rem;
+	@media screen and (max-width: 700px) {
+		padding-left: 1rem;
+	}
+	position: relative;
+}
+.icon {
+	position: absolute;
+	top: 50%;
+	height: 50%;
+	left: 0;
+	transform: translate(-50%, -50%);
+}
+.dateContainer {
+	background-color: #474747;
+    color: var(--text-color-secondary);
+    position: absolute;
+    width: 60px;
+    height: 38px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+	font-size: 1.2rem;
+	font-style: italic;
+	transform: translate(-140%, -45%);
+    left: 0;
+    top: 0;
+}
+.dateArrow {
+	position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    border-bottom: 18px solid transparent;
+    border-left: 18px solid #474747;
+    border-right: 18px solid transparent;
+    border-top: 18px solid transparent;
+    width: 45px;
+    height: 38px;
+}
+
+.expContent {
+	border-left: 2px solid black;
+	padding-left: 3rem;
+	position: relative;
+	@media screen and (max-width: 700px) {
+		padding-left: 1rem;
+	}
+    max-width: 600px;
+}
+.startDate{
+    bottom: 0;
+    top: unset;
+}
+.list{
+    display: flex;
+    padding:1rem; 
+    gap:1rem;
+    flex-direction: column;
+}
+.progressBar {
+    transform-origin: top;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-left: 1px solid var(--blue);
+}
