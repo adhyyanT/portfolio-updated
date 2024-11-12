@@ -4,6 +4,8 @@
 	width: 100%;
 	flex: 1;
 	min-height: 100vh;
+	max-width: 1024px;
+	margin: auto;
 }
 .contentContainer {
 	display: flex;
@@ -15,4 +17,6 @@
 	@media screen and(min-width: 700px) {
 		margin: 0 4rem;
 	}
+	max-width: 1024px;
+	margin: auto;
 }
