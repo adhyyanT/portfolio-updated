@@ -3,20 +3,7 @@
 	flex-direction: column;
 	gap: 2.5rem;
 }
-.title {
-	font-weight: 600;
-}
-.header {
-	position: relative;
-}
-.title::after {
-	content: "";
-	border-bottom: 2px solid var(--blue);
-	position: absolute;
-	bottom: -3px;
-	left: 0;
-	width: 3em;
-}
+
 .expContainer {
 	display: flex;
 	gap: 0.5rem;

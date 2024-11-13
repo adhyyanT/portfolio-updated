@@ -1,0 +1,15 @@
+.title {
+	font-weight: 600;
+}
+.header {
+	position: relative;
+	width: fit-content;
+}
+.title::after {
+	content: "";
+	border-bottom: 2px solid var(--blue);
+	position: absolute;
+	bottom: -3px;
+	left: 0;
+	width: 50%;
+}

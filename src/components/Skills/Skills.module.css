@@ -1,0 +1,114 @@
+.gridContainer {
+	align-content: stretch;
+	justify-content: center;
+	display: grid;
+	gap: 0.5rem;
+	padding: 1vw;
+	grid-template-columns: repeat(7, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+	grid-template-rows: auto;
+	/* grid-template-rows: minmax(auto, 110px); */
+	height: 643px;
+	max-width: 1024px;
+	grid-template-areas:
+		"item1 item2 item3 item4 item4 item5 item5"
+		"item6 item6 item7 item7 item7 item8 item9"
+		"item6 item6 item7 item7 item7 item8 item9"
+		"ite10 ite11 item7 item7 item7 ite12 ite12"
+		"ite13 ite13 ite14 ite14 ite14 ite12 ite12";
+}
+@media screen and (max-width: 600px) {
+	.gridContainer {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			"item1 item2"
+			"item3 item3"
+			"item4 item5"
+			"item6 item7"
+			"item6 item7"
+			"item8 item9"
+			"ite10 item9"
+			"ite11 ite12"
+			"ite13 ite14";
+	}
+}
+.item {
+	background-color: burlywood;
+	border-radius: 10px;
+	display: flex;
+	/* overflow: hidden; */
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+.gridContainer .item:nth-child(1) {
+	grid-area: item1;
+	/* max-height: 130px; */
+}
+.gridContainer .item:nth-child(2) {
+	grid-area: item2;
+}
+.gridContainer .item:nth-child(3) {
+	grid-area: item3;
+}
+.gridContainer .item:nth-child(4) {
+	grid-area: item4;
+}
+.gridContainer .item:nth-child(5) {
+	grid-area: item5;
+}
+
+.gridContainer .item:nth-child(5) {
+	grid-area: item5;
+}
+
+.gridContainer .item:nth-child(6) {
+	grid-area: item6;
+}
+
+.gridContainer .item:nth-child(7) {
+	grid-area: item7;
+}
+
+.gridContainer .item:nth-child(8) {
+	grid-area: item8;
+}
+
+.gridContainer .item:nth-child(9) {
+	grid-area: item9;
+}
+
+.gridContainer .item:nth-child(10) {
+	grid-area: ite10;
+}
+.gridContainer .item:nth-child(11) {
+	grid-area: ite11;
+}
+.gridContainer .item:nth-child(12) {
+	grid-area: ite12;
+}
+.gridContainer .item:nth-child(13) {
+	grid-area: ite13;
+}
+.gridContainer .item:nth-child(14) {
+	grid-area: ite14;
+}
+.gridContainer .item:nth-child(15) {
+	grid-area: ite15;
+}
+
+.imgContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex: 1;
+	/* max-height: 110px; */
+	/* max-width: 100%;
+	max-height: 100%; */
+}
+.img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
