@@ -1,0 +1,48 @@
+.pageContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.formContainer{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+}
+.row{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+.button:active{
+    transform: scale(0.95);
+    transition: all 0.2s;
+}
+.button:hover{
+    background-color: var(--blue);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+/* @media screen and (max-width: 768px) {
+    .formContainer{
+        flex-direction: column;
+    }
+} */

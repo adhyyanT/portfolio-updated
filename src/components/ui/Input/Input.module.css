@@ -1,0 +1,34 @@
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.label{
+    font-weight: 600;
+    font-size: large;
+}
+.input{
+    height: 50px;
+    background-color: #dadada;
+    border: 1px solid transparent;
+    font-size: large;
+    padding: 0 1rem;
+}
+.input:focus{
+    outline: none !important;
+    border:1px solid var(--blue);
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.textarea{
+    height: 150px;
+    background-color: #dadada;
+    border: 1px solid transparent;
+    font-size: large;
+    padding: 1rem 1rem;
+}
+.textarea:focus{
+    outline: none !important;
+    border:1px solid var(--blue);
+    box-shadow: 0 0 10px #719ECE;
+}

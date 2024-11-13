@@ -54,7 +54,7 @@
 }
 
 .expContent {
-	border-left: 2px solid black;
+	/* border-left: 2px solid black; */
 	padding-left: 3rem;
 	position: relative;
 	@media screen and (max-width: 700px) {
@@ -80,5 +80,5 @@
     top: 0;
     left: 0;
     z-index: 0;
-    border-left: 1px solid var(--blue);
+    border-left: 2px solid var(--blue);
 }

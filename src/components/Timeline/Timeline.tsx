@@ -8,7 +8,7 @@ type  TimelineProp = {
   scrollYProgress:MotionValue<number>
 } & JobDescription
 
-export default function Timeline({description,endDate,startDate,companyName,jobTitle,scrollYProgress}: TimelineProp) {
+export default function Timeline({description,endDate,startDate,companyName,jobTitle}: TimelineProp) {
   return (
     <div style={{display:'flex'}}>
       <div className={styles.timeLine}></div>
@@ -22,9 +22,7 @@ export default function Timeline({description,endDate,startDate,companyName,jobT
             <h2>{jobTitle}</h2>
           </div>
           <motion.div  className={classNames(styles.expContent)}>
-            <motion.div style={{scaleY: scrollYProgress}} className={styles.progressBar}>
-
-            </motion.div>
+            <div className={styles.progressBar}></div>
             <div className={styles.dateContainer}>
               <div className={styles.dateArrow}></div>
               <p>{endDate}</p>

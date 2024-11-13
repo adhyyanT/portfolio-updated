@@ -25,3 +25,10 @@
 	margin: auto;
 	max-width: 1200px;
 }
+.footerContainer{
+	/* border: 1px solid	black; */
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

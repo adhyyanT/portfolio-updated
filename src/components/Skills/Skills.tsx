@@ -1,113 +1,101 @@
 import Header from "../Header/Header";
 import styles from "./Skills.module.css";
-import angular from "../../assets/skills/angular_black.png";
-import docker from "../../assets/skills/docker-logo-blue.png";
-import dotnet from "../../assets/skills/dotnet-logo.png";
-import express from "../../assets/skills/expressjs-ar21.svg";
-import github from "../../assets/skills/GitHub_Logo.png";
 import java from "../../assets/skills/java.png";
-import mysql from "../../assets/skills/logo-mysql-170x115.png";
-import nodejs from "../../assets/skills/nodejsDark.svg";
-import react from "../../assets/skills/react.svg";
-import rxjs from "../../assets/skills/RxJs_Logo_Basic.svg";
-import ts from "../../assets/skills/ts-logo-512.png";
-import vue from "../../assets/skills/Vue_idrkKugrkm_0.png";
+import azure from "../../assets/skills/azure.png";
+import { useState, useEffect } from "react";
+import classNames from "classnames";
 
-// const images = [
-// 	{
-// 		src: ts,
-// 		text: "Typescript",
-// 	},
-// 	{
-// 		src: express,
-// 		text: "Express",
-// 	},
-// 	{
-// 		src: nodejs,
-// 		text: "Node.JS",
-// 	},
-// 	{
-// 		src: rxjs,
-// 		text: "RxJS",
-// 	},
-// 	{
-// 		src: mysql,
-// 		text: "MySQL",
-// 	},
-// 	{
-// 		src: react,
-// 		text: "React",
-// 	},
-// 	{
-// 		src: angular,
-// 		text: "Angular",
-// 	},
-// 	{
-// 		src: vue,
-// 		text: "Vue",
-// 	},
-// 	{
-// 		src: java,
-// 		text: "Java",
-// 	},
-// 	{
-// 		src: github,
-// 		text: "Github",
-// 	},
-// 	{
-// 		src: docker,
-// 		text: "Docker",
-// 	},
-// 	{
-// 		src: dotnet,
-// 		text: "Dotnet",
-// 	},
-// 	{
-// 		src: vue,
-// 		text: "Vue",
-// 	},
-// 	{
-// 		src: vue,
-// 		text: "Vue",
-// 	},
-// ];
+const images = [
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/angular.svg",
+		text: "Angular",
+	}
+	,
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/express.svg",
+		text: "Express",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/nodedotjs.svg",
+		text: "Node.JS",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/reactivex.svg",
+		text: "RxJS",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/mysql.svg",
+		text: "MySQL",
+	},
+	
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/typescript.svg",
+		text: "Typescript",
+	}
+	,
+	
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/react.svg",
+		text: "React",
+	}
+	,
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/amazonwebservices.svg",
+		text: "AWS",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/dotnet.svg",
+		text: "Dotnet",
+	}
+	,
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/git.svg",
+		text: "Git",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/docker.svg",
+		text: "Docker",
+	},
+	{
+		src: java,
+		text: "Java",
+	}
+	,
+	{
+		src: azure,
+		text: "Azure",
+	},
+	{
+		src: "https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/vuedotjs.svg",
+		text: "Vue",
+	},
+];
 
 export default function Skills() {
-	// console.log(images.length);
+	const [animatedIndex, setAnimatedIndex] = useState(-1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      setAnimatedIndex(randomIndex);
+    }, 1000); 
+
+    return () => clearInterval(interval);
+  }, []);
 	return (
-		<div>
+		<div className={styles.box}>
 			<Header title="Skills" />
 			<div className={styles.gridContainer}>
-				{/* {images.map((image, index) => {
+				{images.map((image, index) => {
 					return (
-						<article key={index} className={styles.item}>
+						<article key={index} className={classNames(styles.item,index === animatedIndex ? styles.animated: '')}>
 							<div className={styles.imgContainer}>
-								<img className={styles.img} src={image.src} alt={image.text} />
+								<img src={image.src} alt={image.text} className={styles.img} />
 								<p>{image.text}</p>
 							</div>
 						</article>
 					);
-				})} */}
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}>
-					{/* <div className={styles.imgContainer}>
-						<img className={styles.img} src={angular} alt="Angular" />
-						<p>Angular</p>
-					</div> */}
-				</article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				<article className={styles.item}></article>
-				{/* <article className={styles.item}></article> */}
+				})}
 			</div>
 		</div>
 	);

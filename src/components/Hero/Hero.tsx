@@ -4,6 +4,15 @@ import Button from "../ui/Button/Button";
 import { FileDown } from "lucide-react";
 
 export default function Hero() {
+	const handleResumeDownload = () =>{
+		const pdfUrl = import.meta.env.VITE_RESUME;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "Adhyyan_Tripathi.pdf"; // specify the filename
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+	}
 	return (
 		<div className={styles.box}>
 			<div className={styles.titleContainer}>
@@ -17,7 +26,7 @@ export default function Hero() {
 				</p>
 				<pre>With 2+ years of experience.</pre>
 				<div className={styles.buttonContainer}>
-					<Button className={styles.btn} variant="filled">
+					<Button onClick={handleResumeDownload} className={styles.btn} variant="filled">
 						Download CV <FileDown size={"1.1rem"} />
 					</Button>
 				</div>

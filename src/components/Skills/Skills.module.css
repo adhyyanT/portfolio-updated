@@ -1,3 +1,8 @@
+.box{
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
 .gridContainer {
 	align-content: stretch;
 	justify-content: center;
@@ -17,7 +22,7 @@
 		"ite10 ite11 item7 item7 item7 ite12 ite12"
 		"ite13 ite13 ite14 ite14 ite14 ite12 ite12";
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 699px) {
 	.gridContainer {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-areas:
@@ -33,13 +38,9 @@
 	}
 }
 .item {
-	background-color: burlywood;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
 	display: flex;
-	/* overflow: hidden; */
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
 }
 .gridContainer .item:nth-child(1) {
 	grid-area: item1;
@@ -65,9 +66,21 @@
 .gridContainer .item:nth-child(6) {
 	grid-area: item6;
 }
+@media screen and (min-width: 700px) {
+    .gridContainer .item:nth-child(6) .imgContainer > img {
+        width: 128px !important;
+        height: 128px !important;
+    }
+}
 
 .gridContainer .item:nth-child(7) {
 	grid-area: item7;
+}
+@media screen and (min-width: 700px) {
+    .gridContainer .item:nth-child(7) .imgContainer > img {
+        width: 256px !important;
+        height: 256px !important;
+    }
 }
 
 .gridContainer .item:nth-child(8) {
@@ -87,6 +100,12 @@
 .gridContainer .item:nth-child(12) {
 	grid-area: ite12;
 }
+@media screen and (min-width: 700px) {
+    .gridContainer .item:nth-child(12) .imgContainer > img {
+        width: 128px !important;
+        height: 128px !important;
+    }
+}
 .gridContainer .item:nth-child(13) {
 	grid-area: ite13;
 }
@@ -103,12 +122,30 @@
 	align-items: center;
 	flex-direction: column;
 	flex: 1;
-	/* max-height: 110px; */
-	/* max-width: 100%;
-	max-height: 100%; */
+	gap: 0.5rem;
 }
 .img {
-	max-width: 100%;
-	height: auto;
-	object-fit: contain;
+	width: 64px;
+	height: 64px;
 }
+@media screen and (max-width: 700px) {
+    .img{
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@keyframes scaleUpDown {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.gridContainer .item.animated {
+	animation: scaleUpDown 1s ease-in-out;
+  }

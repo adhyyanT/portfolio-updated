@@ -1,3 +1,5 @@
+import classNames from "classnames";
+import ContactForm from "../../components/ContactForm/ContactForm";
 import Experience from "../../components/Experience/Experience";
 import Hero from "../../components/Hero/Hero";
 import Navbar from "../../components/Navbar/Navbar";
@@ -12,17 +14,17 @@ export default function Home() {
 				<Hero />
 			</div>
 			<div className={styles.bodyContainer}>
-				<div className={styles.contentContainer}>
-					<Experience />
-				</div>
-				<div className={styles.contentContainer}>
+				<section className={styles.contentContainer}>
 					<Skills />
-				</div>
-				<footer style={{ maxWidth: "1024px" }}>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quis.
-					Maiores quos dolore quam, est quisquam neque. Repellat est pariatur,
-					iusto tempore nihil illo natus commodi eos accusantium libero
-					reprehenderit?
+				</section>
+				<section className={styles.contentContainer}>
+					<Experience />
+				</section>
+				<section className={styles.contentContainer}>
+					<ContactForm/>
+				</section>
+				<footer className={classNames(styles.contentContainer,styles.footerContainer)}>
+					<p>Made with <span style={{color:"var(--blue)"}}>❤</span> by Adhyyan from <span style={{color:"var(--blue)", fontWeight:'bold'}}>India </span></p>
 				</footer>
 			</div>
 		</div>
