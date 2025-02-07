@@ -3,6 +3,8 @@ import styles from "./Hero.module.css";
 import Button from "../ui/Button/Button";
 import { FileDown } from "lucide-react";
 
+
+// https://drive.google.com/uc?export=download&id=FILEID replace fileId with the pdf id from gdrive
 export default function Hero() {
 	const handleResumeDownload = () =>{
 		const pdfUrl = import.meta.env.VITE_RESUME;
