@@ -4,17 +4,17 @@ export const data: JobDescription[] = [
   {
     companyName: "V2Solutions",
     description: [
-      "Collaborated with a startup in the pDOOH advertising industry and the largest retail mortgage lender in the U.S. to enhance the functionality of their consumer-facing applications utilized by thousands.",
+      "Partnered with a retail mortgage lender in the finance domain and a startup in the advertising industry to enhance the functionality of their consumer-facing applications utilized by thousands.",
 
-      "Implemented caching, resulting in a 50% reduction in network calls during application startup. Consequently, improving the initial loading speed of the admin portal.",
+      "Implemented caching, resulting in a 50% reduction in network calls. Consequently, decreasing the loading time of the admin portal.",
 
-      "Devised two applications from the ground up to track lead generations and admin portal using React, while incorporating several Microsoft Azure services such as Application Insights for logging and Azure Blob storage for image storage.",
+      "Designed and developed two applications from the ground up using React.js to track lead generation and manage an admin portal, integrating Microsoft Azure services like Application Insights for logging and Azure Blob Storage for image management.",
 
       "Engineered intricate functionalities, featuring a highly adaptable landing page that allows modifications through an intuitive user interface in the admin portal.",
 
-      "Developed a debit card payment page for users to streamline their mortgage payment experience.",
+      "Communicated with stakeholders and collaborated with multiple cross-functional teams to gather, analyze, and align requirements for efficient project execution.",
 
-      "Contributed to the backend by implementing and debugging RESTful APIs utilizing technologies like Spring Boot and Spring Data JPA.",
+      "Contributed to the backend by implementing and debugging RESTful APIs utilizing technologies like Express.js, Node.js, and MongoDB.",
     ],
     endDate: "*",
     jobTitle: "Software Engineer",
@@ -23,9 +23,10 @@ export const data: JobDescription[] = [
   {
     companyName: "Capgemini",
     description: [
-      "Completed an intensive three-month training program focusing on Node.js, Express.js, and MySQL.",
-      "Achieved nomination for a certification in Microsoft Azure Fundamentals and was awarded complete sponsorship for the certification due to my outstanding performance during training.",
-      "Showcased reliable skills through collaborative tasks.",
+      "Completed an intensive training program focusing on Node.js, Express.js, and MySQL.",
+      "Nominated for the Microsoft Azure Fundamentals certification and awarded full sponsorship in recognition of exceptional performance during training.",
+      "Gained hands-on experience in the retail domain and played a key role in launching solutions in new markets.",
+      "Actively collaborated with the team in an Agile environment, participating in daily stand-ups, sprint planning, and retrospectives to ensure efficient project execution and continuous improvement.",
     ],
     endDate: "11/22",
     startDate: "10/21",
