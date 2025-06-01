@@ -4,17 +4,15 @@ export const data: JobDescription[] = [
   {
     companyName: "V2Solutions",
     description: [
-      "Partnered with a retail mortgage lender in the finance domain and a startup in the advertising industry to enhance the functionality of their consumer-facing applications utilized by thousands.",
+      "Built scalable web applications in the finance domain, serving thousands of active users.",
 
-      "Implemented caching, resulting in a 50% reduction in network calls. Consequently, decreasing the loading time of the admin portal.",
+      "Migrated a legacy mortgage underwriting desktop app into a responsive web application using React.js and Redux, increasing employee efficiency by 66%.",
 
-      "Designed and developed two applications from the ground up using React.js to track lead generation and manage an admin portal, integrating Microsoft Azure services like Application Insights for logging and Azure Blob Storage for image management.",
+      "Implemented APIs using Express and MongoDB to handle long-duration concurrent modification on the same database record.",
 
-      "Engineered intricate functionalities, featuring a highly adaptable landing page that allows modifications through an intuitive user interface in the admin portal.",
+      "Enhanced the payments page to simplify monthly installment transactions while ensuring compliance with industry-recommended guidelines.",
 
-      "Communicated with stakeholders and collaborated with multiple cross-functional teams to gather, analyze, and align requirements for efficient project execution.",
-
-      "Contributed to the backend by implementing and debugging RESTful APIs utilizing technologies like Express.js, Node.js, and MongoDB.",
+      "Communicated with stakeholders and collaborated with cross-functional teams to gather, analyze, and align requirements for efficient project execution.",
     ],
     endDate: "*",
     jobTitle: "Software Engineer",
@@ -23,9 +21,10 @@ export const data: JobDescription[] = [
   {
     companyName: "Capgemini",
     description: [
-      "Completed an intensive training program focusing on Node.js, Express.js, and MySQL.",
-      "Nominated for the Microsoft Azure Fundamentals certification and awarded full sponsorship in recognition of exceptional performance during training.",
-      "Gained hands-on experience in the retail domain and played a key role in launching solutions in new markets.",
+      "Developed applications from the ground up using Angular to track lead generation and manage an admin portal, integrating Microsoft Azure services like Application Insights for logging.",
+      "Engineered intricate functionalities, featuring a highly adaptable landing page that allows modifications through an intuitive user interface in the admin portal.",
+      "Aggregated multiple API into a single REST endpoint, reducing network calls by 80% and improving application efficiency.",
+      "Created a REST endpoint in Express.js to generate QR codes with embedded URLs, optimizing resource usage and reducing storage costs by 20% through image compression.",
       "Actively collaborated with the team in an Agile environment, participating in daily stand-ups, sprint planning, and retrospectives to ensure efficient project execution and continuous improvement.",
     ],
     endDate: "11/22",
